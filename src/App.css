@@ -1,38 +1,71 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
+  background-color: #f8f5d7;
+  width: 100vw;
+  height: 100vh;
+  inset: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.position-spring {
+  border: 0px solid rebeccapurple;
+  /* height: 100px; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-container {
+  position: absolute;
+  margin: 1.5em 1.5em;
+  z-index: 1;
+  color: lightslategray;
+  font-family: Quicksand, sans-serif;
+  font-weight: 500;
+  font-size: 1.5em;
+  /* width: 70%; */
+}
+.title {
+  float: left;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.menubar {
+  position: absolute;
+  z-index: 1;
+  /* border: 1px solid red; */
+  height: 100px;
+  /* width: 200px; */
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.nav-menu {
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.2);
+  /* margin-top: 2.4em; */
+  padding: 5px;
+  color: lightslategrey;
+  font-family: Fira Code;
+  display: flex;
+  /* align-items: center; */
+  cursor: pointer;
+  /* border: 1px solid #111; */
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.5s;
+}
+.nav-menu:hover {
+  background-color: rgba(0, 0, 0, 1);
+  color: lightslategrey;
+}
+.apps {
+  /* margin-left: 60%; */
+}
+.block {
+
+}
+
+.content-container {
+  margin-top: -40px;
+  /* border: 1px solid #F92B60; */
+  height: 200px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
